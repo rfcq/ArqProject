@@ -6,6 +6,7 @@ public class Person implements People {
 
     public Person(int id, String name, String hierarchy) {
         this.id = id;
+        this.name = name;
         this.hierarchy = hierarchy;
     }
 
@@ -34,7 +35,7 @@ public class Person implements People {
     }
 
     public void printPerson() {
-        System.out.println(getClass().getSimpleName());
+        System.out.println(name + ", " + hierarchy);
     }
 
 }
