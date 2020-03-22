@@ -9,7 +9,8 @@ public class JsonAdapter implements Formatters {
     }
 
     @Override
-    public void StringToFormat(People people) {
+    public void StringToFormat(String people) {
         json.StringToFormat(people);
     }
+
 }

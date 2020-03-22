@@ -1,8 +1,8 @@
 package Converter;
 
-public class StringToXML implements Formatters {
-    @Override
-    public void StringToFormat(People people) {
+public class StringToXML {
+
+    public void StringToFormat(String people) {
 
     }
 }

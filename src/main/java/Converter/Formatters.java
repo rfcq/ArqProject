@@ -1,5 +1,7 @@
 package Converter;
 
+import AddPeople.Person;
+
 public interface Formatters {
-    public void StringToFormat(String people);
+    public void StringToFormat(String person);
 }

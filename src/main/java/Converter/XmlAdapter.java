@@ -4,11 +4,12 @@ public class XmlAdapter implements Formatters {
 
     private StringToXML xml;
 
-    public XmlAdapter(StringToXML stringToXML) {
+    public XmlAdapter(StringToXML people) {
+        this.xml = people;
     }
 
     @Override
-    public void StringToFormat(People people) {
+    public void StringToFormat(String people) {
         xml.StringToFormat(people);
     }
 }
