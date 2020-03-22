@@ -25,4 +25,5 @@ public class Management implements People {
     public void removePerson(People people){
         person.remove(people);
     }
+
 }
