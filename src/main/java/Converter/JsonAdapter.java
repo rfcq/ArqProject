@@ -1,16 +1,15 @@
 package Converter;
 
-public class JsonAdapter implements Formatters {
+public class JsonAdapter extends StringToXML{
 
     private StringToJson json;
 
-    public JsonAdapter(StringToJson people) {
-        this.json = people;
+    public JsonAdapter(StringToJson json) {
+        this.json = json;
     }
 
-    @Override
-    public void StringToFormat(String people) {
-        json.StringToFormat(people);
+    public StringToJson getJson() {
+        return json;
     }
 
 }

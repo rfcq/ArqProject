@@ -1,15 +1,15 @@
 package Converter;
 
-public class XmlAdapter implements Formatters {
+public class XmlAdapter {
 
     private StringToXML xml;
 
-    public XmlAdapter(StringToXML people) {
-        this.xml = people;
+    public XmlAdapter(StringToXML xml) {
+        this.xml = xml;
     }
 
-    @Override
-    public void StringToFormat(String people) {
-        xml.StringToFormat(people);
+    public StringToXML getXml() {
+        return xml;
     }
+
 }
