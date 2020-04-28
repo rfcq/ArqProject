@@ -5,14 +5,12 @@ import java.util.List;
 
 public class Composite implements People {
 
-    private int id;
-    private String hierarchy;
+    private String tag;
 
     private List<People> person;
 
-    public Composite(int id, String hierarchy){
-        this.id = id;
-        this.hierarchy = hierarchy;
+    public Composite(String tag){
+        this.tag = tag;
         this.person = new ArrayList<People>();
     }
 

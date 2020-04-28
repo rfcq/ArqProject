@@ -3,14 +3,18 @@ package Converter;
 import AddPeople.People;
 import com.google.gson.Gson;
 
-public class StringToJson {
+import java.util.ArrayList;
 
-    private People person;
+public class StringToJson implements Formatters{
 
-    public StringToJson(People person) {
+    private ArrayList<People> person;
+
+    public StringToJson(ArrayList<People> person) {
+        super();
         this.person = person;
     }
 
+    @Override
     public void StringToFormat() {
 
         Gson gson = new Gson();
@@ -19,4 +23,5 @@ public class StringToJson {
 
         System.out.println(json);
     }
+
 }

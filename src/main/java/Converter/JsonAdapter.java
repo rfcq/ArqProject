@@ -1,10 +1,12 @@
 package Converter;
 
-public class JsonAdapter extends StringToXML{
+public class JsonAdapter extends StringToToml{
 
     private StringToJson json;
 
     public JsonAdapter(StringToJson json) {
+        super();
+
         this.json = json;
     }
 

@@ -2,22 +2,13 @@ package AddPeople;
 
 public class Person implements People {
 
-    private int id;
     private String name = null;
     private String hierarchy = null;
 
-    public Person(int id, String name, String hierarchy) {
-        this.id = id;
+    public Person(String name, String hierarchy) {
+
         this.name = name;
         this.hierarchy = hierarchy;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
